@@ -1,4 +1,4 @@
-if __name__ == '__estruturas-selecao__':
+if __name__ == '__main__':
     nota = int(input('Digite uma nota: '))
 
     if nota <= 30:

@@ -1,4 +1,4 @@
-if __name__ == '__Lista-de-Convidados__':
+if __name__ == '__main__':
     listaConvidados = ['Izaura', 'Amanda', 'Rafael']
 
     nome = input('Digite seu nome: ')
