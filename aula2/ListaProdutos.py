@@ -21,5 +21,5 @@ if __name__ == '__main__':
     print(f'Estes produtos nós temos: {produtosDisponiveis}')
     print(f'Estes produtos nós não temos: {produtosIndisponiveis}')
 
-    produtosDisponiveis.sort()
-    print(f'Produtos disponíveis em ordem alfabética: {produtosDisponiveis}')
+    produtosMercado.sort()
+    print(f'Produtos disponíveis em ordem alfabética: {produtosMercado}')
