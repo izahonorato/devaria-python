@@ -19,4 +19,17 @@ if __name__ == '__main__':
 
     if len(animalEncontrado) == 0:
         print('Animal não encontrado')
-    else: print(animalEncontrado[0].nome)
+    else:
+        try:
+            if(isinstance(animalEncontrado[0], Mamifero)):
+                print(f'Animal {animalEncontrado[0].nome} encontrao do tipo Mamífero, qtde de Mamas: {animalEncontrado[0].qtdeMamas}')
+            elif(isinstance(animalEncontrado[0], Ave)):
+                print(f'Animal {animalEncontrado[0].nome} encontrao do tipo Ave, qtde penas: {animalEncontrado[0].qtdePenas}')
+            elif(isinstance(animalEncontrado[0], Peixe)):
+                print(f'Animal {animalEncontrado[0].nome} encontrao do tipo Peixe, qtde de nadadeiras: {animalEncontrado[0].qtdeNadadeiras}')
+            elif(isinstance(animalEncontrado[0], Reptil)):
+                print(f'Animal {animalEncontrado[0].nome} encontrao do tipo Reptil, temperatura corporal: {animalEncontrado[0].temperaturaCorporal}')
+            else:
+                print("Ocorreu um erro ao definir o tipo de animal")
+        except Exception as e:
+            print("Ocorreu um erro, favor tentar novamente!")
